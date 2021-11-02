@@ -10,6 +10,8 @@ import { ProductComponent } from './pages/product/product.component';
 import { ProductpageComponent } from './pages/productpage/productpage.component';
 import { NavbarComponent } from './sharepage/navbar/navbar.component';
 import { FooterComponent } from './sharepage/footer/footer.component';
+import { RegistrationComponent } from './pages/registration/registration.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 @NgModule({
@@ -22,6 +24,8 @@ import { FooterComponent } from './sharepage/footer/footer.component';
     ProductpageComponent,
     NavbarComponent,
     FooterComponent,
+    RegistrationComponent,
+    LoginComponent,
     
   ],
   imports: [
