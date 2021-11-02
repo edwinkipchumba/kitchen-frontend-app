@@ -19,7 +19,7 @@ export class ProductpageComponent implements OnInit {
     console.log(this.getProductId,'getproduct');
     if(this.getProductId)
     {
-      this.productData =  this.service.productDetails.filter((value)=>{
+      this.productData =  this.service.Details.filter((value)=>{
           return value.id == this.getProductId;
         });
         console.log(this.productData,'productdata>>');
