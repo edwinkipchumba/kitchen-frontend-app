@@ -6,7 +6,7 @@
 </div>
 <!-- step  -->
 <div class="container mt-5 mb-5">
-    <h1 class="text-center">How to get <span class="highlight">fresh food</span></h1>
+    <h1 class="text-center">How to get <span class="highlight">products</span></h1>
     <div class="row mt-5">
         <!-- one  -->
         <div class="col-lg-4 mt-2">
@@ -34,11 +34,11 @@
 
 <!-- foodbox  -->
 <div class="container mt-4 mb-4">
-    <h1 class="text-center">Customers <span class="highlight">Favourites Food</span></h1>
+    <h1 class="text-center">Customers <span class="highlight">Favourite products</span></h1>
     <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor="let fd of foodData;index as i">
-            <div class="foodbox" *ngIf="i<=3">
-                <img src="{{fd.foodImg}}" />
+        <div class="col-lg-3 mt-3" *ngFor="let pd of productData;index as i">
+            <div class="productbox" *ngIf="i=3">
+                <img src="{{pd.productImg}}" />
                 <h1>{{pd.productName}}</h1>
                 <p>{{pd.productPrice | currency:'INR'}}</p>
             </div>
