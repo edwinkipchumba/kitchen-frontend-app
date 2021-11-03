@@ -1,1 +1,31 @@
-<p>productpage works!</p>
+
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-6" *ngIf="productData">
+            <a routerLink="../../product" class="btn btn-sm btn-dark mb-3 ">Back</a>
+            <img src="{{productData[0].infoImg}}" width="100%"/>
+            <h1 class="mt-3">{{productData[0].infoName}}</h1>
+            <p>{{productData[0].infoDetails}}</p>
+            <p>{{productData[0].infoPrice | currency :'INR'}}</p>
+        </div>
+
+        <div class="col-lg-6 col-12">
+            <h1>Enter Your Details</h1>
+            <form>
+
+                <input type="text" class="form-control" placeholder="Enter Your Full Name" />
+                <input type="text" class="form-control" placeholder="Enter Your Mobile" />
+                <textarea class="form-control" placeholder="Enter Your Address"></textarea>
+                <button class="btn btn-md btn-dark mt-3">Place Order</button>
+
+            </form>
+
+
+        </div> 
+
+
+    </div>
+
+</div>
