@@ -11,9 +11,10 @@ export class HomeComponent implements OnInit {
 
   constructor(private service:OrderDetailsService) { }
   infoData:any;
+  
 
   ngOnInit(): void {
-    this.infoData = this.service.Details;
+    this.infoData = this.service.infoDetails;
   }
 
 }

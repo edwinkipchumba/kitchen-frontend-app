@@ -3,12 +3,12 @@
 
     <div class="row">
 
-        <div class="col-lg-6" *ngIf="infoData">
+        <div class="col-lg-6" *ngIf="productData">
             <a routerLink="../../product" class="btn btn-sm btn-dark mb-3 ">Back</a>
-            <img src="{{infoData[0].productImg}}" width="100%"/>
-            <h1 class="mt-3">{{infoData[0].productName}}</h1>
-            <p>{{infoData[0].Details}}</p>
-            <p>{{infoData[0].productPrice | currency :'INR'}}</p>
+            <img src="{{productData[0].infoImg}}" width="100%"/>
+            <h1 class="mt-3">{{productData[0].infoName}}</h1>
+            <p>{{productData[0].infoDetails}}</p>
+            <p>{{productData[0].infoPrice | currency :'INR'}}</p>
         </div>
 
         <div class="col-lg-6 col-12">

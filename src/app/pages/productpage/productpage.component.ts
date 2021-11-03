@@ -12,17 +12,17 @@ export class ProductpageComponent implements OnInit {
 
   constructor(private param:ActivatedRoute,private service:OrderDetailsService) { }
   getProductId:any;
-  infoData:any;
+  productData:any;
 
   ngOnInit(): void {
     this.getProductId = this.param.snapshot.paramMap.get('id');
     console.log(this.getProductId,'getproduct');
     if(this.getProductId)
     {
-      this.infoData =  this.service.Details.filter((value)=>{
+      this.productData =  this.service.infoDetails.filter((value)=>{
           return value.id == this.getProductId;
         });
-        console.log(this.infoData,'infodata>>');
+        console.log(this.productData,'productdata>>');
         
     }
     
