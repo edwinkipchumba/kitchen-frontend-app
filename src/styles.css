@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
 }
 
-.wrapper{
+/* .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,4 +34,4 @@ button:disabled{
     background: linear-gradient(370deg, blue,red);
     height: 350px;
     display: flex;
-}
+} */
