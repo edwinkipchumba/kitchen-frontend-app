@@ -8,7 +8,6 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent implements OnInit {
-
   constructor(private service:OrderDetailsService) { }
   infoData:any;
 
