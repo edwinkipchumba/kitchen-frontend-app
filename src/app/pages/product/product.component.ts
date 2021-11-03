@@ -10,10 +10,10 @@ import { OrderDetailsService } from 'src/app/services/order-details.service';
 export class ProductComponent implements OnInit {
 
   constructor(private service:OrderDetailsService) { }
-  productData:any;
+  infoData:any;
 
   ngOnInit(): void {
-    this.productData = this.service.productDetails;
+    this.infoData = this.service.infoDetails;
   }
 
 }
