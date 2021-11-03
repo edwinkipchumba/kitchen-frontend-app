@@ -36,11 +36,11 @@
 <div class="container mt-4 mb-4">
     <h1 class="text-center">Customers <span class="highlight">Favourite products</span></h1>
     <div class="row">
-        <div class="col-lg-3 mt-3" *ngFor="let pd of productData;index as i">
-            <div class="productbox" *ngIf="i=3">
-                <img src="{{pd.productImg}}" />
-                <h1>{{pd.productName}}</h1>
-                <p>{{pd.productPrice | currency:'INR'}}</p>
+        <div class="col-lg-3 mt-3" *ngFor="let info of infoData;index as i">
+            <div class="infobox" *ngIf="i<=3">
+                <img src="{{info.infoImg}}" />
+                <h1>{{info.infoName}}</h1>
+                <p>{{info.infoPrice | currency:'INR'}}</p>
             </div>
         </div>
     </div>
