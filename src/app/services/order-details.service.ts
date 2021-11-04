@@ -71,7 +71,7 @@ export class OrderDetailsService {
           password: password,
           email: email,
           
-        },
+        }
         // {
         //   headers: {
         //     Authorization: 'Token ' + this.token,
@@ -97,19 +97,49 @@ export class OrderDetailsService {
   }
 
   // backend products
-  Category: Category;
-  name:Name;
-  description:Description
-  price:Price;
-  image:Image
-  date:Date;
-  order:Order;
+  // category: Category;
+  name:any;
+  // description:Description;
+  // price:Price;
+  // image:Image;
+  // date:Date;
+  // order:Order;
 
   // get products
-  getCategory(){
-    return this.http.get(this.url + 'category');
-  }
+  // getCategory(){
+  //   return this.http.get(this.APIUrl + 'category');
+  // }
 
   // get product name
+  getName(){
+    return this.http.get(this.APIUrl + 'name');
+  };
+
   
+
+  // get product description
+  // getDescription(){
+  //   return this.http.get(this.APIUrl + 'description');
+  // }
+ 
+  // get product price
+  // getPrice(){
+  //   return this.http.get(this.APIUrl + 'price');
+  // }
+
+  // get image product
+  // getImage(){
+  //   retun this.http.get(this.APIUrl + 'image');
+  // }
+  
+  // get product date
+  // getDate(){
+  //   return this.http.get(this.APIUrl + 'date');
+  // }
+
+  // get product order
+  // getOrder(){
+  //   return this.http.get(this.APIUrl + 'order');
+  // }
+
 }
