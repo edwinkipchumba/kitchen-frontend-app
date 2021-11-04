@@ -13,6 +13,10 @@ import { FooterComponent } from './sharepage/footer/footer.component';
 import { RegistrationComponent } from './pages/registration/registration.component';
 import { LoginComponent } from './pages/login/login.component';
 
+import { OrderDetailsService } from './services/order-details.service'
+import {HttpClientModule} from '@angular/common/http';
+import {FormsModule,ReactiveFormsModule} from '@angular/forms';
+
 
 @NgModule({
   declarations: [
