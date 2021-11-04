@@ -1,11 +1,17 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class OrderDetailsService {
 
-  constructor() { }
+
+  // add api url here
+  APIUrl='http://nancyflashcards.herokuapp.com/';
+
+  constructor(private http:HttpClient) { }
 
   // infodetails
 
@@ -53,4 +59,40 @@ export class OrderDetailsService {
       infoImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wtj8esaeslvlscv8glj6"
     }
   ]
+
+
+
+    // create new user
+    createUser(username: string,email: string, password: string) {
+      return this.http.post(
+        this.APIUrl + 'users/create/',
+        {
+          username: username,
+          password: password,
+          email: email,
+          
+        },
+        // {
+        //   headers: {
+        //     Authorization: 'Token ' + this.token,
+        //   },
+        // }
+      );
+    }
+ 
+      // login user
+   loginUser(username: string, password: string) {
+    return this.http.post(
+      this.APIUrl + 'login/',
+      {
+        username: username,
+        password: password,
+      },
+      // {
+      //   headers: {
+      //     Authorization: 'Token ' + this.token,
+      //   },
+      // }
+    );
+  }
 }

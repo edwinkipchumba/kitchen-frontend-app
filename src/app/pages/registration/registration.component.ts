@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Order-detailsService} from '../services/order-detailsservice';
+import { OrderDetailsService } from '../../services/order-details.service';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { Order-detailsService} from '../services/order-detailsservice';
 })
 export class RegistrationComponent implements OnInit {
 
-  constructor(private service: Order-detailsService) { }
+  constructor(private service: OrderDetailsService) { }
 
   ngOnInit(): void {
   }
@@ -38,7 +38,5 @@ export class RegistrationComponent implements OnInit {
      });
 
    form.reset();
-
  }
-
 }
