@@ -95,4 +95,21 @@ export class OrderDetailsService {
       // }
     );
   }
+
+  // backend products
+  Category: Category;
+  name:Name;
+  description:Description
+  price:Price;
+  image:Image
+  date:Date;
+  order:Order;
+
+  // get products
+  getCategory(){
+    return this.http.get(this.url + 'category');
+  }
+
+  // get product name
+  
 }
