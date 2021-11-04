@@ -15,7 +15,7 @@ export class OrderDetailsService {
       infoName:"Paneer Grilled Sandwich",
       infoDetails:"Pan-fried masala paneer.",
       infoPrice:200,
-      infoImg:"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/wzfq7djolqxgdhghebbq"
+      infoImg:"https://images.unsplash.com/photo-1576097449798-7c7f90e1248a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDh8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
       id:2,
