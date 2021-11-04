@@ -14,6 +14,11 @@ import { RegistrationComponent } from './pages/registration/registration.compone
 import { LoginComponent } from './pages/login/login.component';
 
 
+
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,9 +35,10 @@ import { LoginComponent } from './pages/login/login.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    
   ],
-  providers: [],
+  providers: [Order-detailsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
