@@ -5,12 +5,6 @@
 ## Description
 
 This is an Angular frontend application where users can buy by making orders to be delivered
-## Screenshot images
-
-<img src="static../../static/images/home.png">
-
-<img src="static../../static/images/phonesize.png">
-
 
 
 
@@ -58,4 +52,4 @@ If you find a bug, kindly feel free to comment an issue here and inlcude their c
 * group three members.
 
 ## License
-
+https://github.com/edwinkipchumba/kitchen-frontend-app/blob/master/LICENSE
