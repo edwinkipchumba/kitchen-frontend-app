@@ -9,7 +9,7 @@ export class OrderDetailsService {
 
 
   // add api url here
-  APIUrl='http://nancyflashcards.herokuapp.com/';
+  APIUrl='https://cors-anywherebackendkitchen2030.herokuapp.com/api/latest-products/';
 
   constructor(private http:HttpClient) { }
 
@@ -112,7 +112,7 @@ export class OrderDetailsService {
 
   // get product name
   getName(){
-    return this.http.get(this.APIUrl + 'name');
+    return this.http.get(this.APIUrl);
   };
 
   

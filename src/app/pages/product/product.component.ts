@@ -17,6 +17,7 @@ export class ProductComponent implements OnInit {
   image;
   date;
   order;
+  product;
 
   infoData:any;
 
@@ -24,7 +25,7 @@ export class ProductComponent implements OnInit {
   
 
   ngOnInit(): void {
-    this.infoData = this.service.infoDetails;
+    // this.infoData = this.service.infoDetails;
 
     // products
     // this.getCategory();
@@ -46,8 +47,8 @@ export class ProductComponent implements OnInit {
   // name
   getName(){
     this.service.getName().subscribe((data: any) => {
-      this.name = data;
-      console.log(this.name);
+      this.product = data;
+      console.log(this.product);
     });
   }
 

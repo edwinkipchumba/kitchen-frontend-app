@@ -2,14 +2,14 @@
 
     <div class="row">
         <h2>This is our products</h2>
-
-        <div class="col-lg-4" *ngFor="let info of infoData" value=""{{product.name}}>
+            {{product}}
+        <div class="col-lg-4" *ngFor="let prod of product | keyvalue" value=""{{prod.name}}>
 
             <div class="infobox mt-3 mb-3">
-                <img src="{{info.infoImg}}">
-                <h1>{{info.infoName}}</h1>
-                <p>{{info.infoDetails}}</p>
-                <p>{{info.infoPrice | currency:'INR'}}</p>
+                <!-- <img src="{{info.infoImg}}"> -->
+                <h1>{{prod.name}}</h1>
+                <!-- <p>{{info.infoDetails}}</p>
+                <p>{{info.infoPrice | currency:'INR'}}</p> -->
                 <br/>
                 <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
             </div>
