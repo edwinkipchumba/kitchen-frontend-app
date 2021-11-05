@@ -19,17 +19,6 @@ This is an Angular frontend application where users can buy by making orders to 
 https://github.com/edwinkipchumba/kitchen-frontend-app
 
 
-## Behaviour Driven Development (BDD)
-
-| Behaviour | Input | Output |
-| :-----------------| :-----------------: | ------------------: |
-| Sign Up/Login | To create a new account,click on signup and login | Access home page on successful login |
-| Add a new post | Click on the new post on navbar | Access new created post |
-| Add a new business | Access created business | A new business added |
-| Create a new profile | By clicking the profile tab on the navbar | A new profile for the user is created |
-| To View all posts | Navigate to the home page | All posts will be displayed |
-| To search for a business by title | Enter text in search bar | All business that matched the search will be displayed |
-| Logout | Click on the account and select logout | You will be logged out |
 
 ## Setup | Installation Requirements
 
